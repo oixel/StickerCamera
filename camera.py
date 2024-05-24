@@ -1,3 +1,14 @@
+#
+# ⚠️ NOTE: If you have not installed OpenCV, run the command "pip install opencv-python" in your terminal
+#
+# 📸 Controls for Camera:
+#     SPACE :: Take a picture*
+#     ESC :: Exit camera
+#
+# * = All pictures taken can be found in pictures folder
+#
+
+# Imports needed libraries
 import cv2
 import os
 
@@ -25,6 +36,9 @@ if not os.path.isdir("pictures"):
 # Sets the picture count to however many photos there are in the pictures folder to prevent overlapping of picture names
 files = os.listdir("pictures/")
 pic_count = len(files)
+
+# Print empty line for cleaner terminal outputs
+print()
 
 # Runs as long as the window is not closed by user (by pressing 'X' in top right)
 while cv2.getWindowProperty('Photo Camera', cv2.WND_PROP_VISIBLE) >= 1:
