@@ -18,6 +18,10 @@ camera = cv2.VideoCapture(0)
 # Initialize camera so the loop can run
 render_camera()
 
+# Makes a folder named pictures if it does not currently exist
+if not os.path.isdir("pictures"):
+    os.mkdir("pictures")
+
 # Sets the picture count to however many photos there are in the pictures folder to prevent overlapping of picture names
 files = os.listdir("pictures/")
 pic_count = len(files)
