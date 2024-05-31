@@ -7,7 +7,7 @@
 #
 # * = All pictures taken can be found in pictures folder
 #
-
+# hello world
 # Imports needed libraries
 import cv2
 import os
